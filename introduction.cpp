@@ -11,7 +11,7 @@ int main()
     
     int arr[] = {125, 3525,34,80,78,87};
     int newarr;
-    bool result;
+    bool result; //return true(1) or false(0)
     string name;
     //add(arr[0], arr[1]);
     /*
