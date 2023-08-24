@@ -9,7 +9,7 @@ int main(){
     cin >> number;
 
     squareroot = sqrt(number);
-    squared = squareroot * squareroot;
+    squared = squareroot * squareroot ;
 
     cout << "Square root of " << number << " is " <<squareroot << endl;
     //cout << "Square of " << squareroot << " is " << squared;
