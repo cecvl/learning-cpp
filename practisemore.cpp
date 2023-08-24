@@ -8,7 +8,7 @@ int main()
 
     cout<<"Enter 3 numbers: ";
     cin>>a>>b>>c;
-    /*out<<"a is "<<a<<endl<<"b is "<<b<<endl<<"c is "<<c;
+    /*cout<<"a is "<<a<<endl<<"b is "<<b<<endl<<"c is "<<c;
 
     if(a >= b && a >= c){
         cout<<"largest is "<<a;
