@@ -6,8 +6,9 @@ int main()
 {
     int a,b,c;
 
-    cout<<"Enter 3 numbers: ";
-    cin>>a>>b>>c;
+    cout << "Enter 3 numbers: ";
+    cin >> a >> b >> c;
+
     /*cout<<"a is "<<a<<endl<<"b is "<<b<<endl<<"c is "<<c;
 
     if(a >= b && a >= c){
@@ -29,19 +30,20 @@ int main()
         cout<<"Largest is "<<c;
      }
      */
+
     //using nested loop ex.2
     if(a > b){
         if(a > c){
-            cout<<"Largest is "<<a;
+            cout << "Largest is " << a;
         }else{
-            cout<<"Largest is "<<c;
+            cout << "Largest is " << c;
         }
     }else{
         if(b > c){
-            cout<<"Largest is "<<b;
+            cout << "Largest is " << b;
         }
         else{
-            cout<<"largest is "<<c;
+            cout << "largest is " << c;
         }
     }
 
