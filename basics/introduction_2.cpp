@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int main(){
-    const string NAME = "Cecil";
+const string NAME = "Cecil";
 
+int main(){
     cout << NAME;
 }
