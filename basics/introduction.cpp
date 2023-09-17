@@ -37,7 +37,6 @@ int main()
     
     int length = sizeof(arr)/sizeof(arr[0]);
 
-    
     for(int i=0; i<length; i++)
     {
         if(arr[i]%2!=1){
@@ -46,10 +45,10 @@ int main()
             odd++;
         }   
     }
+
     cout << "Even numbers : " << even << endl;
     for(int i=0; i<arr[i]; i++)
     {
-        //cout<<arr[i]<<endl;
         if(arr[i]%2==0){
             cout << arr[i] << endl;
         };
