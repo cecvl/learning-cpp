@@ -11,9 +11,9 @@ int main()
     for (int i = 0; i < 6; ++i){ // loop from 0 to 5
         cout << x[i] << " ";
     }
-
+//ranged for loop
     cout << endl << "As printed by ranged for loop: ";
-    for (const int &n : x){ //ranged for loop
+    for (const int &n : x){ 
         cout  << n << " ";
     }
     
