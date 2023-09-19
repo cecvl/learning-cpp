@@ -2,6 +2,7 @@
 using namespace std;
 
 const double VAT = 0.18;
+const int currentyear = 2023;
 //void displayContent(Person p);
 
 struct Person{
@@ -9,26 +10,30 @@ struct Person{
     char name[50];
     float salary;
     float salary_tax;
+    int year_of_birth;
 };
 void display(Person p){
-    cout << "Customer: " << p.name <<endl;
-    cout << "Age: " << p.age << endl;
+    cout << "Customer: " << p.name << endl;
+    cout << "Y.O.B: " << p.year_of_birth <<endl;
     cout << "Salary: " << p.salary << endl;
     cout << "Tax: "<< p.salary_tax << endl;
 }
 
 int main()
 {
-    Person cecvl;
+    
+    Person customer;
     cout << "Enter name: ";
-    cin.getline(cecvl.name, 50);
+    cin.getline(customer.name, 50);
     cout << "Enter salary: ";
-    cin >> cecvl.salary;
+    
+    cin >> customer.salary;
     cout << "Enter age: ";
-    cin  >> cecvl.age;
+    cin  >> customer.age ; 
 
-    cecvl.salary_tax = cecvl.salary * VAT;
+    customer.salary_tax = customer.salary * VAT;
+    customer.year_of_birth = currentyear - customer.age;
 
-    display(cecvl);
+    display(customer);
 
 }
