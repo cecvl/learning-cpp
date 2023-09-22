@@ -12,5 +12,5 @@ int main()
     //cout << "Tax to be paid: " << sales_tax;
     //price_aftertax = price_beforetax + sales_tax;
     cout <<  "Amount to be paid: " <<  price_beforetax + sales_tax;
-
+ 
 }

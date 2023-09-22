@@ -15,8 +15,6 @@ int main()
     cout << "Enter width: ";
     cin >> ptr->width;
 
-    cout << "Area: " << d.length * ptr->width;
-    /* alternative way
-        (*ptr).area = (*ptr).length * (*ptr).width;
-        */
+    //cout << "Area: " << d.length * ptr->width;
+    cout << "Area: " << (*ptr).length * (*ptr).width;
 }
