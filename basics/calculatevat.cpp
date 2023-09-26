@@ -11,6 +11,6 @@ int main()
     sales_tax = price_beforetax * VAT;
     //cout << "Tax to be paid: " << sales_tax;
     //price_aftertax = price_beforetax + sales_tax;
-    cout <<  "Amount to be paid: " <<  price_beforetax + sales_tax;
+    cout <<  "Amount to be paid: " <<  price_beforetax + sales_tax <<" shillings.";
  
 }
