@@ -3,8 +3,7 @@ using namespace std;
 
 int main()
 {
-    int marks[5], sum = 0, length = 0, _average;
-    //length = sizeof(marks[5]/marks[1]);
+    int marks[5], sum = 0, average;
 
     cout << "Enter five marks: ";
     for(int i = 0; i < 5 ; ++i){
@@ -14,7 +13,7 @@ int main()
         sum += marks[i];
     }
 
-    _average = sum/5;
+    average = sum/5;
 
-    cout << "AVERAGE : " << _average;
+    cout << "AVERAGE : " << average;
 }
