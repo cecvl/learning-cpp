@@ -29,17 +29,8 @@ class Wall {
       return length * height;
     }
 };
-
-int main() {
-  // create an object of Wall class
-  Wall wall1(10.5, 8.6);
-
-  // copy contents of wall1 to wall2
-  Wall wall2 = wall1;
-
-  // print areas of wall1 and wall2
-  cout << "Area of Wall 1: " << wall1.calculateArea() << endl;
-  cout << "Area of Wall 2: " << wall2.calculateArea();
-
-  return 0;
+int main()
+{
+    Wall wall1(23.3,34.2); //constructor can use private data members
+    cout << "Area = " << wall1.calculateArea();
 }
