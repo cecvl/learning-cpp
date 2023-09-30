@@ -18,6 +18,6 @@ class Wall{
 };
 int main()
 {
-    Wall wall1(23.3,34.2); //constructor can use private data members
+    Wall wall1(23.3,34.2); //constructor 
     cout << "Area = " << wall1.calculateArea();
 }
