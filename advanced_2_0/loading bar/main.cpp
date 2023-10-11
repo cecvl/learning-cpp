@@ -4,5 +4,7 @@
 using namespace std;
 int main()
 {
-    loadingBar(50, 100);
+    for (int i = 0; i < 4; ++i) {
+        loadingBar(40, 100);
+    } //prints 4 loading bars
 }
