@@ -23,7 +23,7 @@ int main()
 
    for(int i = 2; i <= num; i++) //you can initialize to 1 or 2
    {
-    cout << I << " ";
+    cout << i << " ";
     product *= i;
    }
    cout << "Factorial of " << num << " is " << product;
