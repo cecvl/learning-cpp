@@ -1,11 +1,23 @@
 #include <iostream>
 #include <fstream>
+//#include <string>
 
 using namespace std;
 int main()
 {
     fstream trialtwo; //object of fstream class
-    trialtwo.open("trialtwo.csv", ios::out); //open file in write mode
+    /*
+    char name[30];
+    cout << "Enter your name: ";
+    gets(name);
+    */
+   
+    string name;
+    cout << "Enter your name: ";
+    getline(cin, name);
+    
+        
+    trialtwo.open("trialtwo.csv", ios::app); //open file in write mode
     /*or use:
     fstream trialthree("trialthree.csv", ios::out);
     */
@@ -14,7 +26,7 @@ int main()
         
     }else{
         cout << "File opened successfully" << endl;
-        trialtwo << "Christian Cecil";
+        trialtwo << name << endl;
         trialtwo.close();
     }
 }
