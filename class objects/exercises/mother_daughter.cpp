@@ -1,29 +1,64 @@
 #include <iostream>
 using namespace std;
 
-class Mother
+class FamilyName
 {
-    public:
-        void display(){
-            cout << "I'm a Kent too." << endl;
-            }
+public:
+    void displayLastName()
+    {
+        cout << "\nMy last name is Kent." << endl;
+    }
+    
 };
 
-class Daughter: public Mother
+class Mother : public FamilyName
 {
-    public:
-        void display(){
-            cout << "I'm Mary." << endl;
-            }
+private:
+    string MaidenName = "My Maiden name is Clark.\n"; 
+    string Nickname = "My nickname is Pooky.\n";
+    
+public: 
+    // Function to access private member
+    void displayMaidenName()
+    {
+        cout << MaidenName;
+    }
+};
+
+class Daughter : public FamilyName
+{
+protected:
+    string FirstName;
+
+public:
+    // Constructor to initialize the first name
+    Daughter(const string& firstName) : FirstName(firstName)
+    {
+    }
+
+    // Function to access protected member
+    void displayFirstName()
+    {
+        cout <<"I'm "<< FirstName << ".";
+    }
 };
 
 int main()
 {
-    Daughter d1;
+    string daughterFirstName;
+    cout << "Enter the daughter's first name: ";
+    cin >> daughterFirstName;
+
     Mother m1;
-    cout << "Mother said, " ;
-    m1.display();
-    cout << "\nDaughter said, " ;
-    d1.display();
-    d1.Mother::display();
+    Daughter d1(daughterFirstName);
+
+    cout << "\nMom said, ";
+    m1.displayLastName();
+    m1.displayMaidenName();
+
+    cout << "\nDaughter said, ";
+    d1.displayFirstName();
+    d1.displayLastName();
+
+    return 0;
 }
