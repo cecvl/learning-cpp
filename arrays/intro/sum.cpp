@@ -2,10 +2,19 @@
 using namespace std;
 
 int main(){
-    int arr[5] = {10, 20, 30, 40, 50};
-    int sum = 0;
+    int marks[5];
+    float sum = 0, average,percentage;
+
+    cout << "Enter marks: " << endl;
     for(int i = 0; i < 5; i++){
-        sum += arr[i]; //adding each element of array to sum
+        cin >> marks[i];
     }
-    cout << "Sum of array elements: " << sum << endl;
+    //Find sum
+    for(int i = 0; i < 5; i++){
+        sum += marks[i];
+    }
+
+    average = sum / 5;
+    //percentage = (sum / 500) * 100;
+    cout << "Average: " << average << endl;    
 }
